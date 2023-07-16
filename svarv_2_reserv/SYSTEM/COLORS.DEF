@@ -1,0 +1,82 @@
+;
+; hjj levels 950201
+; ebl,hsm    951205
+; wwm scheepens 970828
+;
+;color definition file for LE411M with Hosiden 512 colour TFT display.
+;With this display the following colour values are possible only:
+;0, 8, 16, 24, 32, 40, 48, 56 and 63
+;comment lines start with ';' in the FIRST collumn
+;Each definition line contains  the 3 rgb values for
+;the colors 0-15, the 16th entry is for the border color.
+;There must be 3 maps of (17) color-descriptions for
+; 1) 'normal' colors     2) grey 'newlook' colors 
+; 3) mono-screen colors  4) Screen-save colors
+;
+;
+; 16 standard colors for cnc under MC23=0
+; the background is fixed as entry 17
+;
+;TFT             Monitor
+0,0,0           ;0,0,0        ;/*00*/ /*transp*/
+56,0,0          ;63,0,0       ;               /*red*/  
+0,56,0          ;0,52,0       ;               /*green*/ 
+56,56,0         ;52,52,0      ;                    /*yellow*/ 
+0,0,56          ;0,0,52       ;               /*blue*/ 
+56,56,0         ;52,52,0      ;/*cursor/      /*yellow*/ 
+0,56,56         ;0,52,52      ;               /*cyan*/ 
+48,48,40        ;47,47,47     ;/*status line/      /*redish gray*/ 
+0,0,0           ;0,0,0        ;                    /*black*/ 
+40,48,32        ;37,41,63     ;/*programm process/ /*dark green*/
+48,56,40        ;41,63,41     ;/*operate process/  /*light green*/ 
+56,56,56        ;63,63,41     ;/*dialogbox fields/ /*white*/ 
+40,40,56        ;37,41,63     ;/*pictures/         /*blue+*/ 
+56,32,56        ;63,31,63     ;                    /*mag.+*/ 
+56,56,48        ;41,63,63     ;/*control process/  /*off white*/ 
+56,56,56        ;63,63,63     ;/*15*/         /*white+*/ 
+0,0,0           ;0,0,0        ;/*border/      /*black*/ 
+;
+; 16 colours under MC23=2
+; the background is fixed as entry 17
+;
+;TFT            
+0,0,0			;/*00*/				/*transp	*/
+56,0,0			;					/*red		*/
+0,56,0			;					/*green		*/
+56,56,0			;					/*yellow	*/
+0,0,56			;					/*blue		*/
+40,40,40		;/*05*/shadow-grey	/*magenta	*/
+0,56,56			;					/*cyan		*/
+48,48,48		;status line		/*white		*/
+0,0,0			;					/*black		*/
+40,40,32		;free				/*red+		*/
+48,48,48		;/*10*/ light grey	/*green+	*/
+56,56,56		;					/*yellow+	*/
+40,40,56		;picture			/*blue+		*/
+56,32,56		;					/*mag.+		*/
+56,56,0			;cursor				/*cyan+		*/
+56,56,56		;/*15*/				/*white+	*/
+0,0,0			;border				/*black		*/
+;
+;the 16 colours+background for the screen-saver MC24
+;
+47,47,47                ;/*00*/ /*white*/       
+0,52,52                 ;               /*cyan*/        
+0,0,0                   ;               /*black*/       
+0,0,0                   ;               /*black*/       
+0,0,0                   ;               /*black*/       
+0,0,0                   ;/*05*/ /*black*/       
+0,0,0                   ;               /*black*/       
+0,0,0                   ;               /*black*/       
+47,47,47                ;               /*white*/       
+0,52,52                 ;               /*cyan*/        
+0,0,0                   ;/*10*/ /*black*/       
+0,0,0                   ;               /*black*/       
+0,0,0                   ;               /*black*/       
+0,0,0                   ;               /*black*/       
+0,0,0                   ;               /*black*/       
+0,0,0                   ;/*15*/ /*black*/       
+0,0,0                   ;border /*black*/       
+;
+; end of file
+;

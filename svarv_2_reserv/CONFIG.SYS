@@ -1,0 +1,24 @@
+[menu]
+menuitem=Normal,Normal startup
+menuitem=Verbose,Verbose startup
+menuitem=Static,Static startup
+menudefault=Normal,0
+
+[Normal]
+
+[Verbose]
+
+[Static]
+
+[common]
+DEVICE=C:\DOS\HIMEM.SYS /TESTMEM:OFF
+DOS=UMB
+BUFFERS=15,0
+FILES=30
+FCBS=4,0
+STACKS=0,0
+LASTDRIVE=K
+DEVICE=C:\DOS\RAMDRIVE.SYS /E 5900
+DEVICE=C:\DOS\ANSI.SYS
+SHELL=C:\COMMAND.COM C:\ /E:2048 /P
+DEVICE=C:\DOS\INTERLNK.EXE /COM1 /NOPRINTER /AUTO

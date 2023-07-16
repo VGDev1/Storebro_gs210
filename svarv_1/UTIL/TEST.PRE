@@ -1,0 +1,42 @@
+;
+; NC System Power Up Tests
+;
+CPU=1		;Get CPU Id
+CPU=2		;Get CPU String
+CPU=3		;Get CPU Speed
+CPU=4		;Get FPU Type
+CPU=5		;Get PC Type
+CPU=6		;Get Bios Version
+CPU=7		;Get DOS Version
+CPU=8		;Get Memory size
+;CPU=D		;Get Harddisk  Size (Niet voor de ManualPlus)
+CPU=11		;Get PCI Bios Version
+CPU=12		;Search PCI Devices
+;
+PC4=1		;Search for PC4
+PC4=2		;Get HW Version
+PC4=3		;Get LE411 Base Addresses
+PC4=4		;Get Matrix Id
+PC4=5		;Get Sram Base/Size
+PC4=6		;Get Battery State
+PC4=7		;Get Flash Base/Size
+PC4=8		;Get Display Info
+PC4=9		;Get Comport HW Version
+PC4=A		;Get Encoder HW Version
+PC4=B		;Search Safety I/O
+PC4=C		;Search Endat
+;
+PLU=1		;Search for PLUs
+PLU=2		;Get Plc Power State
+PLU=3		;Get Params
+;PLU=4		;Get Diagnose Info
+;
+HCU=1		;Search for HCUs
+;
+CCU=1		;Search CCU
+CCU=8		;Load Diagnose Firmware Phase0
+CCU=A		;Get Params
+;
+SWI=1		;Search for SWI module
+SWI=2		;Search for language files
+			 
